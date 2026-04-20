@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reports Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+
+            /* Background Image */
+            background-image: url('https://picsum.photos/1600/900');
+            background-size: cover;
+            background-position: center;
+
+            /* Center content */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.6); /* dark transparent box */
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .btn {
+            display: block;
+            width: 250px;
+            padding: 14px;
+            margin: 15px auto;
+            font-size: 16px;
+            color: white;
+            background: #007BFF;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <button class="btn" onclick="openRJS()">RJS Report</button>
+    <button class="btn" onclick="openSLRTC()">SLRTC Report</button>
+    <button class="btn" onclick="openHRJRS()">HRJRS Report</button>
+</div>
+
+<script>
+function openRJS() {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSd4LcCkn2TiZIi3sBHLXe0b7qZJQ6fkgz37B-F3BOMXIrc54g/viewform?usp=publish-editor", "_blank"); // change link
+}
+
+function openSLRTC() {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSd4LcCkn2TiZIi3sBHLXe0b7qZJQ6fkgz37B-F3BOMXIrc54g/viewform?usp=publish-editor", "_blank");
+}
+
+function openHRJRS() {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSd4LcCkn2TiZIi3sBHLXe0b7qZJQ6fkgz37B-F3BOMXIrc54g/viewform?usp=publish-editor", "_blank");
+}
+</script>
+
+</body>
+</html>

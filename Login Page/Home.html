@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            border-radius: 15px;
+            color: white;
+            width: 350px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            margin: 15px 0;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .report-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .report-btn:hover {
+            background-color: #45a049;
+        }
+
+        .enquiry-btn {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .enquiry-btn:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Home Page</h1>
+
+        <button class="btn report-btn" onclick="visitReport()">
+            Create Visit Report
+        </button>
+
+        <button class="btn enquiry-btn" onclick="visitEnquiry()">
+            View Report
+        </button>
+    </div>
+
+    <script>
+        function visitReport() {
+            window.open("http://127.0.0.1:5500/Login%20Page/google.html", "_blank");
+            // window.location.href = "visit-report.html";
+        }
+
+        function visitEnquiry() {
+            alert("Opening Visit Enquiry Page...");
+            // window.location.href = "visit-enquiry.html";
+        }
+    </script>
+
+</body>
+</html>
